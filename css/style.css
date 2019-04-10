@@ -1,0 +1,93 @@
+/* 
+  COLORS: 
+
+  beige       : #fbeed7
+  burnt-yellow: #ffba5a
+  dark-orange : #ff7657
+  purple      : #665c84
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* this is the root font-size--all rem units are relative to this one. */
+  /* 62.5% = 10px if the browser's font-size is 16px */
+  font-size: 62.5%; }
+
+body {
+  background-color: #665c84;
+  box-sizing: border-box;
+  /* padding and borders aren't added to width or height */
+  color: #fbeed7;
+  font-family: Comfortaa, sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(255, 186, 90, 0.801), rgba(255, 118, 87, 0.801)), url(../img/marvin-meyer-571072-unsplash.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
+  height: 90vh;
+  background-position: right;
+  /* forces alignment to the specified side */
+  background-size: cover;
+  /* fit this element according to the viewport width */ }
+  .header__logo-box {
+    background-color: #665c84;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 93% 100%, 0 100%);
+    padding: 0 3rem 3rem 2.5rem;
+    position: absolute; }
+  .header__login-box {
+    top: 6rem;
+    right: 10rem;
+    position: absolute; }
+
+.logo-heading {
+  color: #fbeed7;
+  backface-visibility: hidden;
+  /* fix for animation shakiness */ }
+  .logo-heading--primary {
+    font-family: Lobster Two;
+    font-size: 8rem; }
+  .logo-heading--secondary {
+    color: #fbeed7;
+    display: block;
+    font-family: Comfortaa;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: -1.5rem;
+    animation: moveInLeft 0.5s ease-out; }
+    .logo-heading--secondary span {
+      color: #ffba5a; }
+
+.btn {
+  backface-visibility: hidden;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 1.5rem 3rem; }
+  .btn:link, .btn:visited {
+    transition: all 0.15s; }
+  .btn:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.2rem); }
+  .btn:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.1rem); }
+  .btn--purple {
+    color: #fbeed7;
+    background-color: #665c84; }
+    .btn--purple:active {
+      color: #ffba5a; }
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-6rem);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }

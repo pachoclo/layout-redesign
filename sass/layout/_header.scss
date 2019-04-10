@@ -1,0 +1,21 @@
+.header {
+  background-image: linear-gradient(to right bottom, rgba($color-secondary, 0.801), rgba($color-secondary-dark, 0.801)),
+    url(../img/marvin-meyer-571072-unsplash.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
+  height: 90vh;
+  background-position: right; /* forces alignment to the specified side */
+  background-size: cover; /* fit this element according to the viewport width */
+
+  &__logo-box {
+    background-color: $color-primary;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 93% 100%, 0 100%);
+    padding: 0 3rem 3rem 2.5rem;
+    position: absolute;
+  }
+
+  &__login-box {
+    top: 6rem;
+    right: 10rem;
+    position: absolute;
+  }
+}

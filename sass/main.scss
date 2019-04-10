@@ -1,144 +1,15 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
 @import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-$color-primary: #665c84;
-$color-secondary: #ffba5a;
-$color-secondary-dark: #ff7657;
-$color-tertiary: #fbeed7;
+@import "components/button";
 
-$color-gray-dark: #7777;
-$color-black: #000;
+@import "layout/grid";
+@import "layout/header";
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  /* this is the root font-size--all rem units are relative to this one. */
-  /* 62.5% = 10px if the browser's font-size is 16px */
-  font-size: 62.5%;
-}
-
-body {
-  background-color: $color-primary;
-  box-sizing: border-box; /* padding and borders aren't added to width or height */
-  color: $color-tertiary;
-  font-family: Comfortaa, sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-}
-
-.header {
-  background-image: linear-gradient(to right bottom, rgba($color-secondary, 0.801), rgba($color-secondary-dark, 0.801)),
-    url(../img/marvin-meyer-571072-unsplash.jpg);
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
-  height: 90vh;
-  background-position: right; /* forces alignment to the specified side */
-  background-size: cover; /* fit this element according to the viewport width */
-
-  &__logo-box {
-    background-color: $color-primary;
-    clip-path: polygon(0 0, 100% 0, 100% 87%, 93% 100%, 0 100%);
-    padding: 0 3rem 3rem 2.5rem;
-    position: absolute;
-  }
-
-  &__login-box {
-    top: 6rem;
-    right: 10rem;
-    position: absolute;
-  }
-}
-
-.logo-heading {
-  color: $color-tertiary;
-  backface-visibility: hidden; /* fix for animation shakiness */
-
-  &--primary {
-    font-family: Lobster Two;
-    font-size: 8rem;
-  }
-
-  &--secondary {
-    color: $color-tertiary;
-    display: block;
-    font-family: Comfortaa;
-    font-weight: 400;
-    font-size: 2rem;
-    margin-top: -1.5rem;
-    animation: moveInLeft 0.5s ease-out;
-
-    & span {
-      color: $color-secondary;
-    }
-  }
-}
-
-.btn {
-  backface-visibility: hidden;
-  display: inline-block;
-  font-size: 1.8rem;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 1.5rem 3rem;
-
-  &:link,
-  &:visited {
-    transition: all 0.15s;
-  }
-
-  &:hover {
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    transform: translateY(-0.2rem);
-  }
-
-  &:active {
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.1);
-    transform: translateY(-0.1rem);
-  }
-
-  &--purple {
-    color: $color-tertiary;
-    background-color: $color-primary;
-
-    &:active {
-      color: $color-secondary;
-    }
-
-    // "expanding btn animation
-    // &::after {
-    //   background-color: $color-primary;
-    // }
-
-    // &:after {
-    //   content: "";
-    //   display: inline-block;
-    //   height: 100%;
-    //   left: 0;
-    //   position: absolute;
-    //   top: 0;
-    //   transition: all 0.5s;
-    //   width: 100%;
-    //   z-index: -1;
-    // }
-
-    // &:hover::after {
-    //   transform: scale(1.3);
-    //   opacity: 0;
-    // }
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    transform: translateX(-6rem);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+@import "pages/home";

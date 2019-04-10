@@ -1,11 +1,11 @@
-/* 
-  COLORS: 
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-6rem);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
-  beige       : #fbeed7
-  burnt-yellow: #ffba5a
-  dark-orange : #ff7657
-  purple      : #665c84
-*/
 *,
 *::after,
 *::before {
@@ -19,31 +19,17 @@ html {
   font-size: 62.5%; }
 
 body {
+  box-sizing: border-box;
+  /* padding and borders aren't added to width or height */ }
+
+body {
   background-color: #665c84;
   box-sizing: border-box;
   /* padding and borders aren't added to width or height */
   color: #fbeed7;
   font-family: Comfortaa, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.7; }
-
-.header {
-  background-image: linear-gradient(to right bottom, rgba(255, 186, 90, 0.801), rgba(255, 118, 87, 0.801)), url(../img/marvin-meyer-571072-unsplash.jpg);
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
-  height: 90vh;
-  background-position: right;
-  /* forces alignment to the specified side */
-  background-size: cover;
-  /* fit this element according to the viewport width */ }
-  .header__logo-box {
-    background-color: #665c84;
-    clip-path: polygon(0 0, 100% 0, 100% 87%, 93% 100%, 0 100%);
-    padding: 0 3rem 3rem 2.5rem;
-    position: absolute; }
-  .header__login-box {
-    top: 6rem;
-    right: 10rem;
-    position: absolute; }
 
 .logo-heading {
   color: #fbeed7;
@@ -84,10 +70,20 @@ body {
     .btn--purple:active {
       color: #ffba5a; }
 
-@keyframes moveInLeft {
-  0% {
-    transform: translateX(-6rem);
-    opacity: 0; }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
+.header {
+  background-image: linear-gradient(to right bottom, rgba(255, 186, 90, 0.801), rgba(255, 118, 87, 0.801)), url(../img/marvin-meyer-571072-unsplash.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
+  height: 90vh;
+  background-position: right;
+  /* forces alignment to the specified side */
+  background-size: cover;
+  /* fit this element according to the viewport width */ }
+  .header__logo-box {
+    background-color: #665c84;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 93% 100%, 0 100%);
+    padding: 0 3rem 3rem 2.5rem;
+    position: absolute; }
+  .header__login-box {
+    top: 6rem;
+    right: 10rem;
+    position: absolute; }

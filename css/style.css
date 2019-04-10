@@ -89,23 +89,52 @@ body {
 .row {
   max-width: 140rem;
   /* 114*font-size */
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fbeed7;
+  color: #000; }
+  .row:not(:last-child) {
+    margin-bottom: 4rem; }
+  .row::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .row [class^="col-"] {
+    background-color: orange;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 4rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 4rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 8rem) / 3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 12rem) / 4); }
+  .row .col-2-of-3 {
+    width: calc((((100% - 8rem) / 3) * 2) + 4rem); }
+  .row .col-2-of-4 {
+    width: calc(((100% - 12rem) / 4) * 2 + 4rem); }
+  .row .col-3-of-4 {
+    width: calc(((100% - 12rem) / 4) * 3 + (4rem * 2)); }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(255, 186, 90, 0.801), rgba(255, 118, 87, 0.801)), url(../img/marvin-meyer-571072-unsplash.jpg);
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
-  height: 75vh;
   background-position: right;
   /* forces alignment to the specified side */
   background-size: cover;
-  /* fit this element according to the viewport width */ }
+  /* fit this element according to the viewport width */
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
+  height: 75vh;
+  max-width: 140rem;
+  margin: 0 auto;
+  margin-bottom: 4rem; }
   .header__logo-box {
     background-color: #665c84;
     clip-path: polygon(0 0, 100% 0, 100% 87%, 93% 100%, 0 100%);
-    padding: 0 3rem 3rem 2.5rem;
-    display: inline-block; }
+    display: inline-block;
+    margin-right: 15rem;
+    padding: 0 3rem 3rem 2.5rem; }
   .header__login-box {
     animation: fadeIn 0.65s ease-in;
+    float: right;
     margin-top: 5rem;
-    margin-right: 15rem;
-    float: right; }
+    margin-right: 15rem; }

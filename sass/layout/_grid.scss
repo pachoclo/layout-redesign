@@ -1,5 +1,47 @@
 .row {
-  max-width: 140rem; /* 114*font-size */
+  max-width: $grid-width; /* 114*font-size */
   margin: 0 auto;
-  // background-color: #fff;
+  background-color: $color-tertiary;
+  color: $color-black;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+    background-color: orange;
+    float: left;
+
+    &:not(:last-child) {
+      // do not apply right margin to the last column of the row
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    // (100% width parent - space between columns) / 2
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - #{$gutter-horizontal * 2}) / 3);
+  }
+
+  .col-1-of-4 {
+    width: calc((100% - #{$gutter-horizontal * 3}) / 4);
+  }
+
+  .col-2-of-3 {
+    width: calc((((100% - #{$gutter-horizontal * 2}) / 3) * 2) + #{$gutter-horizontal});
+  }
+
+  .col-2-of-4 {
+    width: calc(((100% - #{$gutter-horizontal * 3}) / 4) * 2 + #{$gutter-horizontal});
+  }
+
+  .col-3-of-4 {
+    width: calc(((100% - #{$gutter-horizontal * 3}) / 4) * 3 + (#{$gutter-horizontal} * 2));
+  }
 }

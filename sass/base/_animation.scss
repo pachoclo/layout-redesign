@@ -1,10 +1,33 @@
 @keyframes moveInLeft {
   0% {
-    transform: translateX(-6rem);
+    transform: translateX(-10rem);
     opacity: 0;
   }
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

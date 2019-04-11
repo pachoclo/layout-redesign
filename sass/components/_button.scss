@@ -3,11 +3,13 @@
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 400;
+  text-align: center;
   text-decoration: none;
   padding: 1.5rem 3rem;
 
   &:link,
   &:visited {
+    // box-shadow: 0 0.5rem 1rem rgba($color-black, 0.1);
     transition: all 0.15s;
   }
 
@@ -17,13 +19,15 @@
   }
 
   &:active {
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.1);
     transform: translateY(-0.1rem);
   }
 
   &--purple {
+    animation: growHorizontally 0.65s;
+    border-radius: 10rem;
     color: $color-tertiary;
     background-color: $color-primary;
+    overflow: auto;
 
     &:active {
       color: $color-secondary;

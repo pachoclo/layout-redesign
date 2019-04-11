@@ -3,8 +3,9 @@
     url(../img/marvin-meyer-571072-unsplash.jpg);
   background-position: right; /* forces alignment to the specified side */
   background-size: cover; /* fit this element according to the viewport width */
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
-  height: 75vh;
+  // clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 0 100%);
+  height: 80vh;
 
   // these could be a mixin shared with row
   max-width: $grid-width;
@@ -13,9 +14,8 @@
 
   &__logo-box {
     background-color: $color-primary;
-    clip-path: polygon(0 0, 100% 0, 100% 87%, 93% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3rem), calc(100% - 3rem) 100%, 0 100%);
     display: inline-block;
-    margin-right: 15rem;
     padding: 0 3rem 3rem 2.5rem;
   }
 
@@ -23,6 +23,7 @@
     animation: fadeIn 0.65s ease-in;
     float: right;
     margin-top: 5rem;
+    margin-left: 15rem;
     margin-right: 15rem;
   }
 }

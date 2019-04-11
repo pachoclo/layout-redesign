@@ -1,6 +1,6 @@
 .btn {
   backface-visibility: hidden;
-  display: inline-block;
+  display: block;
   font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
@@ -9,27 +9,27 @@
 
   &:link,
   &:visited {
-    // box-shadow: 0 0.5rem 1rem rgba($color-black, 0.1);
     transition: all 0.15s;
   }
 
   &:hover {
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    box-shadow: 0 0.7rem 2rem rgba($color-primary, 0.3);
     transform: translateY(-0.2rem);
   }
 
   &:active {
+    box-shadow: 0 0.1rem 0.5rem rgba($color-primary, 0.3);
     transform: translateY(-0.1rem);
   }
 
   &--purple {
-    animation: growHorizontally 0.65s;
+    animation: growHorizontally 0.5s;
     border-radius: 10rem;
     color: $color-tertiary;
     background-color: $color-primary;
-    overflow: auto;
 
-    &:active {
+    &:active,
+    & span {
       color: $color-secondary;
     }
 

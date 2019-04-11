@@ -71,9 +71,50 @@ body {
     .logo-heading--secondary span {
       color: #ffba5a; }
 
+.heading-secondary {
+  color: transparent;
+  background-image: linear-gradient(to bottom, #8d84a9, #5a5275);
+  background-clip: text;
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 700; }
+
+.heading-tertiary {
+  color: #665c84;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2rem;
+  border-bottom: 1px solid #ffba5a; }
+
+.paragraph {
+  color: #665c84;
+  font-size: 1.6rem;
+  font-weight: 300; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 7rem; }
+
+.u-padding-left-big {
+  padding-left: 10rem; }
+
+.u-padding-right-big {
+  padding-right: 10rem; }
+
 .btn {
   backface-visibility: hidden;
-  display: inline-block;
+  display: block;
   font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
@@ -82,17 +123,18 @@ body {
   .btn:link, .btn:visited {
     transition: all 0.15s; }
   .btn:hover {
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.7rem 2rem rgba(102, 92, 132, 0.3);
     transform: translateY(-0.2rem); }
   .btn:active {
+    box-shadow: 0 0.1rem 0.5rem rgba(102, 92, 132, 0.3);
     transform: translateY(-0.1rem); }
   .btn--purple {
-    animation: growHorizontally 0.65s;
+    animation: growHorizontally 0.5s;
     border-radius: 10rem;
     color: #fbeed7;
-    background-color: #665c84;
-    overflow: auto; }
-    .btn--purple:active {
+    background-color: #665c84; }
+    .btn--purple:active,
+    .btn--purple span {
       color: #ffba5a; }
 
 .row {
@@ -102,13 +144,12 @@ body {
   background-color: #fbeed7;
   color: #000; }
   .row:not(:last-child) {
-    margin-bottom: 4rem; }
+    margin-bottom: 3rem; }
   .row::after {
     clear: both;
     content: "";
     display: table; }
   .row [class^="col-"] {
-    background-color: orange;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 4rem; }
@@ -119,11 +160,11 @@ body {
   .row .col-1-of-4 {
     width: calc((100% - 12rem) / 4); }
   .row .col-2-of-3 {
-    width: calc((((100% - 8rem) / 3) * 2) + 4rem); }
+    width: calc( (((100% - 8rem) / 3) * 2) + 4rem); }
   .row .col-2-of-4 {
-    width: calc(((100% - 12rem) / 4) * 2 + 4rem); }
+    width: calc( ((100% - 12rem) / 4) * 2 + 4rem); }
   .row .col-3-of-4 {
-    width: calc(((100% - 12rem) / 4) * 3 + (4rem * 2)); }
+    width: calc( ((100% - 12rem) / 4) * 3 + (4rem * 2)); }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(255, 186, 90, 0.801), rgba(255, 118, 87, 0.801)), url(../img/marvin-meyer-571072-unsplash.jpg);
@@ -135,7 +176,7 @@ body {
   height: 80vh;
   max-width: 140rem;
   margin: 0 auto;
-  margin-bottom: 4rem; }
+  margin-bottom: 3rem; }
   .header__logo-box {
     background-color: #665c84;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3rem), calc(100% - 3rem) 100%, 0 100%);
@@ -147,3 +188,8 @@ body {
     margin-top: 5rem;
     margin-left: 15rem;
     margin-right: 15rem; }
+
+.section-about {
+  background-color: #fbeed7;
+  padding-top: 4rem;
+  padding-bottom: 8rem; }

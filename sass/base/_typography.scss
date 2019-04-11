@@ -30,3 +30,35 @@ body {
     }
   }
 }
+
+.heading-secondary {
+  color: transparent;
+  background-image: linear-gradient(
+    to bottom,
+    lighten($color-primary, 15%),
+    darken($color-primary, 5%)
+  );
+  background-clip: text;
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.heading-tertiary {
+  color: $color-primary;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2rem;
+  border-bottom: 1px solid $color-secondary;
+}
+
+.paragraph {
+  color: $color-primary;
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

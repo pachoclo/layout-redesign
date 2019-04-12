@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -78,10 +79,26 @@ body {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 700; }
+  .heading-secondary--decorated::before {
+    color: #ffba5a;
+    content: "«";
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-right: 2rem;
+    transform: translateY(-1rem); }
+  .heading-secondary--decorated::after {
+    content: "»";
+    color: #ffba5a;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-left: 2rem;
+    transform: translateY(-1rem); }
 
 .heading-tertiary {
   color: #665c84;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 2rem;
@@ -89,53 +106,81 @@ body {
 
 .paragraph {
   color: #665c84;
-  font-size: 1.6rem;
-  font-weight: 300; }
+  font-size: 1.4rem;
+  font-weight: 100; }
   .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
+    margin-bottom: 5rem; }
 
 .u-center-text {
   text-align: center; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 2rem; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 5rem; }
 
 .u-margin-bottom-big {
   margin-bottom: 7rem; }
 
+.u-padding-top-small {
+  padding-top: 4.5rem; }
+
+.u-padding-top-medium {
+  padding-top: 7rem; }
+
+.u-padding-top-big {
+  padding-top: 9rem; }
+
+.u-padding-left-small {
+  padding-left: 4.5rem; }
+
+.u-padding-left-medium {
+  padding-left: 7rem; }
+
 .u-padding-left-big {
-  padding-left: 10rem; }
+  padding-left: 9rem; }
+
+.u-padding-right-small {
+  padding-right: 4.5rem; }
+
+.u-padding-right-medium {
+  padding-right: 7rem; }
 
 .u-padding-right-big {
-  padding-right: 10rem; }
+  padding-right: 9rem; }
+
+.u-padding-bottom-small {
+  padding-bottom: 4.5rem; }
+
+.u-padding-bottom-medium {
+  padding-bottom: 7rem; }
+
+.u-padding-bottom-big {
+  padding-bottom: 9rem; }
 
 .btn {
   backface-visibility: hidden;
-  display: block;
+  display: inline-block;
   font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
-  padding: 1.5rem 3rem; }
+  padding: 1.5rem 3rem;
+  box-shadow: 0rem 0.3rem 0.1rem rgba(0, 0, 0, 0.1); }
   .btn:link, .btn:visited {
-    transition: all 0.15s; }
+    transition: all 0.2s; }
   .btn:hover {
-    box-shadow: 0 0.7rem 2rem rgba(102, 92, 132, 0.3);
-    transform: translateY(-0.2rem); }
+    background-color: #726693; }
   .btn:active {
-    box-shadow: 0 0.1rem 0.5rem rgba(102, 92, 132, 0.3);
-    transform: translateY(-0.1rem); }
+    background-color: #655b82;
+    color: #ffb856;
+    box-shadow: none;
+    transform: translateY(0.1rem); }
   .btn--purple {
-    animation: growHorizontally 0.5s;
     border-radius: 10rem;
     color: #fbeed7;
-    background-color: #665c84; }
-    .btn--purple:active,
-    .btn--purple span {
-      color: #ffba5a; }
+    background-color: #695f89; }
 
 .row {
   max-width: 140rem;
@@ -167,7 +212,6 @@ body {
     width: calc( ((100% - 12rem) / 4) * 3 + (4rem * 2)); }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(255, 186, 90, 0.801), rgba(255, 118, 87, 0.801)), url(../img/marvin-meyer-571072-unsplash.jpg);
   background-position: right;
   /* forces alignment to the specified side */
   background-size: cover;
@@ -190,6 +234,4 @@ body {
     margin-right: 15rem; }
 
 .section-about {
-  background-color: #fbeed7;
-  padding-top: 4rem;
-  padding-bottom: 8rem; }
+  background-color: #fbeed7; }

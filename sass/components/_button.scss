@@ -1,6 +1,6 @@
 .btn {
   backface-visibility: hidden;
-  display: block;
+  display: inline-block;
   font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
@@ -9,29 +9,31 @@
 
   &:link,
   &:visited {
-    transition: all 0.15s;
+    transition: all 0.2s;
   }
 
+  box-shadow: 0rem 0.3rem 0.1rem rgba($color-black, 0.1);
+
   &:hover {
-    box-shadow: 0 0.7rem 2rem rgba($color-primary, 0.3);
-    transform: translateY(-0.2rem);
+    background-color: lighten($color-primary, 5%);
+    // color: $color-secondary;
+    // box-shadow: 0rem 0.4rem 0.2rem rgba($color-black, 0.1);
+    // transform: scaleY(2rem);
+    // transform: translateY(-0.1rem);
   }
 
   &:active {
-    box-shadow: 0 0.1rem 0.5rem rgba($color-primary, 0.3);
-    transform: translateY(-0.1rem);
+    background-color: darken($color-primary, 0.5%);
+    color: darken($color-secondary, 0.8%);
+    box-shadow: none;
+    transform: translateY(0.1rem);
   }
 
   &--purple {
-    animation: growHorizontally 0.5s;
+    // animation: growHorizontally 0.5s;
     border-radius: 10rem;
     color: $color-tertiary;
-    background-color: $color-primary;
-
-    &:active,
-    & span {
-      color: $color-secondary;
-    }
+    background-color: lighten($color-primary, 1.5%);
 
     // "expanding btn animation
     // &::after {

@@ -42,11 +42,33 @@ body {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 700;
+
+  &--decorated {
+    &::before {
+      color: $color-secondary;
+      content: "«";
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-right: 2rem;
+      transform: translateY(-1rem);
+    }
+
+    &::after {
+      content: "»";
+      color: $color-secondary;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-left: 2rem;
+      transform: translateY(-1rem);
+    }
+  }
 }
 
 .heading-tertiary {
   color: $color-primary;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 2rem;
@@ -55,10 +77,10 @@ body {
 
 .paragraph {
   color: $color-primary;
-  font-size: 1.6rem;
-  font-weight: 300;
+  font-size: 1.4rem;
+  font-weight: 100;
 
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 }

@@ -73,6 +73,10 @@ body {
   text-transform: uppercase;
   text-shadow: 2rem;
   border-bottom: 1px solid $color-secondary;
+
+  &--dark-underline {
+    border-bottom: 1px solid darken($color-secondary, 30%);
+  }
 }
 
 .paragraph {

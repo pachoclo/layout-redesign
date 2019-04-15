@@ -1,8 +1,6 @@
 .row {
   max-width: $grid-width; /* 114*font-size */
   margin: 0 auto;
-  background-color: $color-tertiary;
-  color: $color-black;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;

@@ -1,5 +1,17 @@
 .section-about {
   background-color: $color-tertiary;
-  padding-top: 5rem;
-  padding-bottom: 8rem;
+  padding: 11rem 11rem;
+}
+
+.section-features {
+  background-color: $color-primary;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.8),
+      rgba(darken($color-primary, 20%), 0.8)
+    ),
+    url(../img/annie-spratt-608001-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 11rem 11rem;
 }

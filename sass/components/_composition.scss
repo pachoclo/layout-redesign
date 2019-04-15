@@ -7,7 +7,8 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.3);
     position: absolute;
     z-index: 10;
-    transition: all 0.15s;
+    transition: all 0.25s;
+    margin-top: -3rem;
 
     &--p1 {
       left: 0rem;
@@ -15,14 +16,14 @@
     }
 
     &--p2 {
-      right: 0rem;
-      top: 15rem;
+      right: 10rem;
+      top: 10rem;
     }
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.1) translateY(-0.5rem);
       z-index: 20;
-      box-shadow: 0 2rem 4rem rgba($color-black, 0.4);
+      box-shadow: 0 2rem 4rem rgba($color-black, 0.5);
     }
   }
 

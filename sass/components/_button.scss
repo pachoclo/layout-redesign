@@ -28,8 +28,7 @@
     color: $color-tertiary;
     background-color: $color-primary;
 
-    &:active,
-    & span {
+    &:active {
       color: $color-secondary;
     }
 

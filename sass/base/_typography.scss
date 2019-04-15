@@ -42,6 +42,28 @@ body {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 700;
+
+  &--decorated {
+    &::before {
+      color: $color-secondary;
+      content: "«";
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-right: 1.5rem;
+      transform: translateY(-1rem);
+    }
+
+    &::after {
+      content: "»";
+      color: $color-secondary;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-left: 1.5rem;
+      transform: translateY(-1rem);
+    }
+  }
 }
 
 .heading-tertiary {

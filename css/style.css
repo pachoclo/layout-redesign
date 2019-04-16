@@ -79,13 +79,17 @@ body {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 700; }
+  .heading-secondary--light {
+    color: #ffba5a;
+    background-image: none;
+    background-clip: none; }
   .heading-secondary--decorated::before {
     color: #ffba5a;
     content: "«";
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 100;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     transform: translateY(-1rem); }
   .heading-secondary--decorated::after {
     content: "»";
@@ -93,7 +97,7 @@ body {
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 100;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     transform: translateY(-1rem); }
 
 .heading-tertiary {
@@ -160,6 +164,35 @@ body {
 
 .u-padding-bottom-big {
   padding-bottom: 9rem; }
+
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__icon {
+    font-size: 15rem; }
+  .card__side {
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
+    color: #665c84;
+    height: 50rem;
+    text-align: center;
+    transition: all 0.6s ease;
+    padding: 2.5rem 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0; }
+    .card__side--front {
+      background-color: #ffba5a; }
+    .card__side--back {
+      background-color: #fbeed7;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
 
 .btn {
   backface-visibility: hidden;
@@ -282,11 +315,15 @@ body {
 
 .section-about {
   background-color: #fbeed7;
-  padding: 11rem 11rem; }
+  padding: 8rem 11rem 12rem; }
 
 .section-features {
   background-color: #665c84;
   background-image: linear-gradient(to right bottom, rgba(102, 92, 132, 0.8), rgba(56, 50, 72, 0.8)), url(../img/annie-spratt-608001-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  padding: 11rem 11rem; }
+  padding: 14rem 11rem; }
+
+.section-feature-detailed {
+  background-color: #665c84;
+  padding: 8rem 11rem 12rem; }

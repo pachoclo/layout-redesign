@@ -1,0 +1,42 @@
+.card {
+  perspective: 150rem; // needed to make the card flip
+  position: relative;
+  height: 50rem;
+
+  &__icon {
+    font-size: 15rem;
+  }
+
+  &__side {
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 3rem rgba($color-black, 0.25);
+    color: $color-primary;
+    height: 50rem;
+    text-align: center;
+    transition: all 0.6s ease;
+    padding: 2.5rem 0;
+    position: absolute;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
+    &--front {
+      background-color: $color-secondary;
+    }
+
+    &--back {
+      background-color: $color-tertiary;
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0deg);
+  }
+}

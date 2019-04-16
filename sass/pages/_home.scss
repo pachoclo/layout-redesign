@@ -1,6 +1,6 @@
 .section-about {
   background-color: $color-tertiary;
-  padding: 11rem 11rem;
+  padding: 8rem 11rem 12rem;
 }
 
 .section-features {
@@ -13,5 +13,10 @@
     url(../img/annie-spratt-608001-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  padding: 11rem 11rem;
+  padding: 14rem 11rem;
+}
+
+.section-feature-detailed {
+  background-color: $color-primary;
+  padding: 8rem 11rem 12rem;
 }

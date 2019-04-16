@@ -83,6 +83,9 @@ body {
   &--dark-underline {
     border-bottom: 1px solid darken($color-secondary, 30%);
   }
+  &--v-aligned {
+    padding-bottom: 2rem;
+  }
 }
 
 .paragraph {

@@ -109,6 +109,8 @@ body {
   border-bottom: 1px solid #ffba5a; }
   .heading-tertiary--dark-underline {
     border-bottom: 1px solid #c07000; }
+  .heading-tertiary--v-aligned {
+    padding-bottom: 2rem; }
 
 .paragraph {
   color: #665c84;
@@ -168,15 +170,17 @@ body {
 .card {
   perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 35rem; }
   .card__icon {
-    font-size: 15rem; }
+    font-size: 15rem;
+    margin-top: 2rem;
+    display: inline-block; }
   .card__side {
     backface-visibility: hidden;
     border-radius: 5px;
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
     color: #665c84;
-    height: 50rem;
+    height: 35rem;
     text-align: center;
     transition: all 0.6s ease;
     padding: 2.5rem 0;
@@ -188,9 +192,9 @@ body {
       background-color: #ffba5a; }
     .card__side--back {
       background-color: #fbeed7;
-      transform: rotateY(180deg); }
+      transform: rotateY(-180deg); }
   .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
+    transform: rotateY(180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
 
@@ -321,9 +325,9 @@ body {
   background-color: #665c84;
   background-image: linear-gradient(to right bottom, rgba(102, 92, 132, 0.8), rgba(56, 50, 72, 0.8)), url(../img/annie-spratt-608001-unsplash.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   padding: 14rem 11rem; }
 
-.section-feature-detailed {
+.section-features-detailed {
   background-color: #665c84;
   padding: 8rem 11rem 12rem; }

@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* this is the root font-size--all rem units are relative to this one. */
+  /* 62.5% = 10px if the browser's font-size is 16px */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box; /* padding and borders aren't added to width or height */
+}

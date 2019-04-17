@@ -1,0 +1,48 @@
+.section-about {
+  background-color: $color-tertiary;
+  padding: 8rem 11rem 12rem;
+
+  &__icon {
+    color: $color-primary;
+    font-size: 22rem;
+    transform: translateY(50%);
+  }
+
+  &__block {
+    background-color: rgba($color-secondary, 0.9);
+    padding: 4rem 4rem;
+    border-radius: 5px;
+  }
+
+  & ul {
+    padding: 0 1.5rem;
+
+    li {
+      color: $color-primary;
+      font-size: 1.8rem;
+      padding-left: 1rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.section-features {
+  background-color: $color-primary;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.8),
+      rgba(darken($color-primary, 20%), 0.8)
+    ),
+    url(../img/annie-spratt-608001-unsplash.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 14rem 11rem;
+}
+
+.section-features-detailed {
+  background-color: $color-primary;
+  padding: 8rem 11rem 12rem;
+}

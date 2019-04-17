@@ -1,0 +1,112 @@
+body {
+  background-color: $color-primary;
+  box-sizing: border-box; /* padding and borders aren't added to width or height */
+  color: $color-tertiary;
+  font-family: Comfortaa, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.logo-heading {
+  color: $color-tertiary;
+  backface-visibility: hidden; /* fix for animation shakiness */
+
+  &--primary {
+    font-family: Lobster Two;
+    font-size: 8rem;
+  }
+
+  &--secondary {
+    color: $color-tertiary;
+    display: block;
+    font-family: Comfortaa;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: -1.5rem;
+    animation: moveInLeft 0.6s ease-in-out;
+
+    & span {
+      color: $color-secondary;
+    }
+  }
+}
+
+.heading-secondary {
+  color: transparent;
+  background-image: linear-gradient(
+    to bottom,
+    lighten($color-primary, 15%),
+    darken($color-primary, 5%)
+  );
+  background-clip: text;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 700;
+
+  &--light {
+    color: $color-secondary;
+    background-image: none;
+    background-clip: none;
+  }
+
+  &--decorated {
+    &::before {
+      color: $color-secondary;
+      content: "«";
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-right: 1rem;
+      transform: translateY(-1rem);
+    }
+
+    &::after {
+      content: "»";
+      color: $color-secondary;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-left: 1rem;
+      transform: translateY(-1rem);
+    }
+  }
+}
+
+.heading-tertiary {
+  color: $color-primary;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: initial;
+
+  &--dark-underline {
+    border-bottom: 1px solid darken($color-secondary, 30%);
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+  }
+  &--v-aligned {
+    padding-bottom: 2rem;
+  }
+}
+
+.heading-quaternary {
+  color: $color-primary;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: initial;
+
+  &--dark-underline {
+    border-bottom: 1px solid darken($color-secondary, 30%);
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.paragraph {
+  color: $color-primary;
+  font-size: 1.8rem;
+  font-weight: 400;
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}

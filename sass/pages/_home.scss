@@ -1,6 +1,32 @@
 .section-about {
   background-color: $color-tertiary;
   padding: 8rem 11rem 12rem;
+
+  &__icon {
+    color: $color-primary;
+    font-size: 22rem;
+    transform: translateY(50%);
+  }
+
+  &__block {
+    background-color: rgba($color-secondary, 0.9);
+    padding: 4rem 4rem;
+    border-radius: 5px;
+  }
+
+  & ul {
+    padding: 0 1.5rem;
+
+    li {
+      color: $color-primary;
+      font-size: 1.8rem;
+      padding-left: 1rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
 
 .section-features {

@@ -12,7 +12,12 @@
       href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
@@ -43,38 +48,55 @@
 
           <div class="row">
             <div class="col-1-of-2">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                El Title
-              </h3>
-              <p class="paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                molestias, voluptatibus quae ullam ea provident voluptatum velit
-                animi totam mollitia adipisci est! Numquam illum doloribus
-                officia sit? Harum, tempora vero.
-              </p>
-
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                El Title 2
-              </h3>
-              <p class="paragraph">
-                Corporis dolore debitis modi nostrum ratione veniam incidunt,
-                quia accusantium rem necessitatibus repellendus quidem, est
-                sunt. Cumque itaque id sit possimus.
-              </p>
+              <div class="section-about__block">
+                <h3 class="heading-tertiary heading-tertiary--dark-underline">
+                  We were (are) students too
+                </h3>
+                <p class="paragraph">
+                  We know school is stressful. We wanna make it easier for you.
+                </p>
+                <ul>
+                  <li>
+                    Authenticate using your favorite social login or sign-up
+                    directly with us.
+                  </li>
+                  <li>Easily create and modify your team.</li>
+                  <li>Drag and drop your files.</li>
+                  <li>
+                    Get suggestions on what tools, processes, and articles could
+                    help you get the work done - all based on the tech you are
+                    using.
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="col-1-of-2 u-center-text">
+              <i class="fas fa-laptop-code section-about__icon"></i>
+            </div>
+          </div>
 
-            <div class="col-1-of-2 u-padding-top-small u-padding-left-medium">
-              <div class="composition">
-                <img
-                  src="img/tim-gouw-60216-unsplash.jpg"
-                  alt="photo 1"
-                  class="composition__photo composition__photo--p1"
-                />
-                <img
-                  src="img/jordan-encarnacao-588600-unsplash.jpg"
-                  alt="photo 1"
-                  class="composition__photo composition__photo--p2"
-                />
+          <div class="row u-padding-top-small">
+            <div class="col-1-of-2 u-center-text">
+              <i class="fab fa-github section-about__icon"></i>
+            </div>
+            <div class="col-1-of-2">
+              <div class="section-about__block">
+                <h3 class="heading-tertiary heading-tertiary--dark-underline">
+                  Free and Open Source
+                </h3>
+                <p class="paragraph">
+                  We believe in sharing and transparency.
+                </p>
+                <p class="paragraph">
+                  Not sure what the app is doing with your data? Don't take our
+                  word for it: check the the code yourself (and let us know what
+                  you think).
+                </p>
+                <p class="paragraph">
+                  Improvement ideas? Create a pull request and help us make the
+                  tools your community and yourself will be using. Let's use the
+                  power of the community and build the best damn tool we can!
+                </p>
               </div>
             </div>
           </div>
@@ -82,62 +104,48 @@
 
         <section class="section-features ">
           <div class="row">
-            <div class="col-1-of-4">
+            <div class="col-1-of-3">
               <div class="feature-box">
                 <i class="feature-box__icon icon-basic-notebook-pen"></i>
                 <h3
-                  class="heading-tertiary heading-tertiary--dark-underline u-margin-bottom-small"
+                  class="heading-quaternary heading-quaternary--dark-underline"
                 >
-                  All Your Materials
+                  Your Materials
                 </h3>
                 <p class="feature-box__text">
-                  Numquam molestias, voluptatibus quae ullam ea provident
-                  voluptatum velit animi totam mollitia adipisci est!
+                  Assignment guidelines, project milestones, course syllabus and
+                  more, all in one place
+                  <br />
                 </p>
               </div>
             </div>
 
-            <div class="col-1-of-4">
+            <div class="col-1-of-3">
               <div class="feature-box">
                 <i class="feature-box__icon icon-basic-geolocalize-05"></i>
                 <h3
-                  class="heading-tertiary heading-tertiary--dark-underline u-margin-bottom-small"
+                  class="heading-quaternary heading-quaternary--dark-underline"
                 >
-                  Setup Sessions
+                  Study Sessions
                 </h3>
                 <p class="feature-box__text">
-                  Numquam molestias, voluptatibus quae ullam ea provident
-                  voluptatum velit animi totam mollitia adipisci est!
+                  Setup your study sessions' location and time in-app. Any
+                  changes are broadcasted to all group members.
                 </p>
               </div>
             </div>
 
-            <div class="col-1-of-4">
+            <div class="col-1-of-3">
               <div class="feature-box">
                 <i class="feature-box__icon icon-basic-message-multiple"></i>
                 <h3
-                  class="heading-tertiary heading-tertiary--dark-underline u-margin-bottom-small"
+                  class="heading-quaternary heading-quaternary--dark-underline"
                 >
                   Messaging
                 </h3>
                 <p class="feature-box__text">
-                  Numquam molestias, voluptatibus quae ullam ea provident
-                  voluptatum velit animi totam mollitia adipisci est!
-                </p>
-              </div>
-            </div>
-
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <i class="feature-box__icon icon-basic-cloud"></i>
-                <h3
-                  class="heading-tertiary heading-tertiary--dark-underline u-margin-bottom-small"
-                >
-                  All in the Cloud
-                </h3>
-                <p class="feature-box__text">
-                  Numquam molestias, voluptatibus quae ullam ea provident
-                  voluptatum velit animi totam mollitia adipisci est!
+                  Keep your project discussions separate from your social apps.
+                  Search history and pin key ideas.
                 </p>
               </div>
             </div>

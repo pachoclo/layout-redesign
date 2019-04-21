@@ -11,12 +11,9 @@
   transition: all 0.3s;
 
   &__icon {
-    background-image: linear-gradient(
-      to bottom,
-      darken($color-secondary, 20%),
-      darken($color-secondary, 40%)
-    );
+    background-image: linear-gradient(to bottom, darken($color-secondary, 20%), darken($color-secondary, 40%));
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     display: inline-flex;
     font-size: 7rem;

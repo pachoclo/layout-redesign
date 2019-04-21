@@ -23,7 +23,7 @@
   }
 
   &--purple {
-    animation: growHorizontally 0.5s;
+    animation: growHorizontally 0.5s, fadeIn 1s;
     border-radius: 10rem;
     color: $color-tertiary;
     background-color: $color-primary;

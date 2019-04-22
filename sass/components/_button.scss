@@ -1,15 +1,13 @@
 .btn {
-  backface-visibility: hidden;
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  padding: 1.5rem 3rem;
-
   &:link,
   &:visited {
-    transition: all 0.15s;
+    backface-visibility: hidden;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
   }
 
   &:hover {
@@ -23,7 +21,6 @@
   }
 
   &--purple {
-    animation: growHorizontally 0.5s, fadeIn 1s;
     border-radius: 10rem;
     color: $color-tertiary;
     background-color: $color-primary;

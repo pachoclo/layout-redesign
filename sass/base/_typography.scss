@@ -14,7 +14,6 @@ body {
   &--primary {
     font-family: Lobster Two;
     font-size: 8rem;
-    line-height: 170%;
   }
 
   &--secondary {
@@ -23,8 +22,7 @@ body {
     font-family: Comfortaa;
     font-weight: 400;
     font-size: 2rem;
-    margin-top: -1.5rem;
-    animation: moveInLeft 0.6s ease-in-out;
+    margin-top: -0.5rem;
 
     & span {
       color: $color-secondary;

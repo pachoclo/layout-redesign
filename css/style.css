@@ -7,10 +7,8 @@
 
 @keyframes moveInLeft {
   0% {
-    transform: translateX(-10rem);
-    opacity: 0; }
+    transform: translateX(-30rem); }
   100% {
-    opacity: 1;
     transform: translateX(0); } }
 
 @keyframes moveInTop {
@@ -60,16 +58,14 @@ body {
   /* fix for animation shakiness */ }
   .logo-heading--primary {
     font-family: Lobster Two;
-    font-size: 8rem;
-    line-height: 170%; }
+    font-size: 8rem; }
   .logo-heading--secondary {
     color: #fbeed7;
     display: block;
     font-family: Comfortaa;
     font-weight: 400;
     font-size: 2rem;
-    margin-top: -1.5rem;
-    animation: moveInLeft 0.6s ease-in-out; }
+    margin-top: -0.5rem; }
     .logo-heading--secondary span {
       color: #ffba5a; }
 
@@ -206,7 +202,7 @@ body {
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
 
-.btn {
+.btn:link, .btn:visited {
   backface-visibility: hidden;
   display: block;
   font-size: 1.8rem;
@@ -214,21 +210,21 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 1.5rem 3rem; }
-  .btn:link, .btn:visited {
-    transition: all 0.15s; }
-  .btn:hover {
-    box-shadow: 0 0.7rem 2rem rgba(102, 92, 132, 0.3);
-    transform: translateY(-0.2rem); }
-  .btn:active {
-    box-shadow: 0 0.1rem 0.5rem rgba(102, 92, 132, 0.3);
-    transform: translateY(-0.1rem); }
-  .btn--purple {
-    animation: growHorizontally 0.5s, fadeIn 1s;
-    border-radius: 10rem;
-    color: #fbeed7;
-    background-color: #665c84; }
-    .btn--purple:active {
-      color: #ffba5a; }
+
+.btn:hover {
+  box-shadow: 0 0.7rem 2rem rgba(102, 92, 132, 0.3);
+  transform: translateY(-0.2rem); }
+
+.btn:active {
+  box-shadow: 0 0.1rem 0.5rem rgba(102, 92, 132, 0.3);
+  transform: translateY(-0.1rem); }
+
+.btn--purple {
+  border-radius: 10rem;
+  color: #fbeed7;
+  background-color: #665c84; }
+  .btn--purple:active {
+    color: #ffba5a; }
 
 .composition {
   position: relative; }
@@ -313,12 +309,20 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 0 100%);
   height: 80vh;
   margin-bottom: 3rem; }
+  .header__logo-box-extension {
+    background-color: #665c84;
+    height: 18rem;
+    float: left;
+    width: calc((100% - 140rem) / 2); }
   .header__logo-box {
+    animation: moveInLeft 0.5s ease-in-out;
     background-color: #665c84;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3rem), calc(100% - 3rem) 100%, 0 100%);
     display: inline-block;
+    height: 18rem;
     padding: 0 4rem 3rem 4rem; }
   .header__login-box {
+    animation: growHorizontally 0.5s, fadeIn 1s;
     float: right;
     margin-top: 5rem;
     margin-right: 15rem; }

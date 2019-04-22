@@ -7,14 +7,24 @@
   height: 80vh;
   margin-bottom: $gutter-vertical;
 
+  &__logo-box-extension {
+    background-color: $color-primary;
+    height: 18rem;
+    float: left;
+    width: calc((100% - #{$grid-width}) / 2);
+  }
+
   &__logo-box {
+    animation: moveInLeft 0.5s ease-in-out;
     background-color: $color-primary;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3rem), calc(100% - 3rem) 100%, 0 100%);
     display: inline-block;
+    height: 18rem;
     padding: 0 4rem 3rem 4rem;
   }
 
   &__login-box {
+    animation: growHorizontally 0.5s, fadeIn 1s;
     float: right;
     margin-top: 5rem;
     margin-right: 15rem;
